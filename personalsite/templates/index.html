@@ -3,12 +3,25 @@
 <head>
 	{% load static %}
 	<meta charset="UTF-8">
-	<title>个人简历</title>
+	<title>My Resume</title>
+	<link rel='stylesheet' type="text/css" href="/static/css/index.css">
 </head>
 <body>
-<body style="background-image: url({% static '/images/background.gif' %});
-     		 background-repeat:no-repeat;
-     		 background-size: 100% 100%">
-<h1 style="margin-left:50%;">{{ name }}</h1>
+<body class="background">
+<div align="center">
+	<span class="name">{{ name }}</span></br>
+	<div class="addr">
+		Phone: {{ phone_num }} <span><strong>|</strong></span>
+		Email: <a href="mailto:deyanchen89@gmail.com">{{ email }}</a> <span><strong>|</strong></span>
+		Address: {{ address }}
+	</div>
+</div>
+<div>
+	<span class="section_title">Skills</span>
+	<li class="li">Excellent experiences with Python</li>
+	<li class="li"></li>
+	<li class="li"></li>
+	<li class="li"></li>
+</div>
 </body>
 </html>
